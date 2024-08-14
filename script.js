@@ -1,24 +1,9 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const loginForm = document.getElementById('login');
-    const signupForm = document.getElementById('signup');
-    const goToSignup = document.getElementById('goToSignup');
-    const goToLogin = document.getElementById('goToLogin');
+document.getElementById('show-signup').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector('.form-inner').classList.add('show-signup');
+});
 
-    function showSignup() {
-        loginForm.style.transform = 'rotateY(-180deg)';
-        signupForm.style.transform = 'rotateY(0deg)';
-    }
-
-    function showLogin() {
-        loginForm.style.transform = 'rotateY(0deg)';
-        signupForm.style.transform = 'rotateY(180deg)';
-    }
-
-    goToSignup.addEventListener('click', () => {
-        showSignup();
-    });
-
-    goToLogin.addEventListener('click', () => {
-        showLogin();
-    });
+document.getElementById('show-login').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector('.form-inner').classList.remove('show-signup');
 });

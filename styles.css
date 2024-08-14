@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: skyblue;
+    background-color: #f0f0f0;
 }
 
 .container {
@@ -15,14 +15,12 @@ body {
     width: 100%;
     max-width: 400px;
     position: relative;
-    overflow: hidden;
 }
 
 .form-inner {
     display: flex;
     transition: transform 0.6s ease;
     width: 200%;
-    position: relative;
 }
 
 .form {
@@ -89,4 +87,4 @@ a:hover {
     .form-container {
         max-width: 600px;
     }
-    }
+}

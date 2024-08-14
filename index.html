@@ -3,36 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Media Site</title>
+    <title>Social Media Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main>
+    <div class="container">
         <div class="form-container">
-            <section id="login">
-                <h1>Login</h1>
-                <form id="loginForm">
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" required>
-                    <label for="loginPassword">Password:</label>
-                    <input type="password" id="loginPassword" name="password" required>
-                    <button type="button" id="goToSignup">Sign Up</button>
-                    <button type="submit">Login</button>
-                </form>
-            </section>
-            <section id="signup" class="hidden">
-                <h1>Sign Up</h1>
-                <form id="signupForm">
-                    <label for="signupEmail">Email:</label>
-                    <input type="email" id="signupEmail" name="signupEmail" required>
-                    <label for="signupPassword">Password:</label>
-                    <input type="password" id="signupPassword" name="signupPassword" required>
-                    <button type="button" id="goToLogin">Login</button>
-                    <button type="submit">Sign Up</button>
-                </form>
-            </section>
+            <div class="form-inner" id="form-inner">
+                <!-- Login Form -->
+                <div class="form" id="login-form">
+                    <h2>Login</h2>
+                    <form>
+                        <input type="text" placeholder="Phone Number" required>
+                        <input type="password" placeholder="Password" required>
+                        <button type="submit">Login</button>
+                    </form>
+                    <p><a href="#" id="show-signup">Don't have an account? Sign up</a></p>
+                </div>
+
+                <!-- Sign Up Form -->
+                <div class="form" id="signup-form">
+                    <h2>Sign Up</h2>
+                    <form>
+                        <input type="text" placeholder="Phone Number" required>
+                        <input type="password" placeholder="Password" required>
+                        <input type="password" placeholder="Confirm Password" required>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                    <p><a href="#" id="show-login">Already have an account? Login</a></p>
+                </div>
+            </div>
         </div>
-    </main>
-    <script src="scripts.js"></script>
+    </div>
+    <script src="script.js"></script>
 </body>
-  </html>
+                            </html>
